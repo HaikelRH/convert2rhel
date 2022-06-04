@@ -1,0 +1,10 @@
+
+# converting from CentOS Linux 8 or Oracle Linux 8, install the json-c package from the Universal Base Image 8 BaseOS repository:
+sudo yum install -y https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/Packages/j/json-c-0.13.1-3.el8.x86_64.rpm
+
+
+# Install Convert2RHEL:
+sudo curl -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release https://www.redhat.com/security/data/fd431d51.txt
+sudo curl --create-dirs -o /etc/rhsm/ca/redhat-uep.pem https://ftp.redhat.com/redhat/convert2rhel/redhat-uep.pem
+sudo curl -o /etc/yum.repos.d/convert2rhel.repo https://ftp.redhat.com/redhat/convert2rhel/8/convert2rhel.repo
+sudo yum -y install convert2rhel
