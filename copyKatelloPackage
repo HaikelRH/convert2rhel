@@ -1,0 +1,2 @@
+
+sudo curl --insecure --output /usr/share/convert2rhel/subscription-manager/katello-ca-consumer-latest.noarch.rpm https://<satellite.example.com>/pub/katello-ca-consumer-latest.noarch.rpm
